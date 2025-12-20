@@ -19,7 +19,7 @@ export default function Experience() {
         </div>
         <br />
 
-        <div className="flex gap-2">
+        <div className="sm:flex sm:gap-2">
           <ShowcaseCard
             title="DillarAcademy"
             description="A fullstack teaching website for a nonprofit built from scratch to manage courses and users."
