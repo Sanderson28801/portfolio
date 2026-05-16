@@ -37,6 +37,32 @@ export default function About() {
           playing the Piano and have played in the Pit for musicals In a jazz
           band briefly, but generally just love to play on my own.
         </p>
+
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-6">
+          {/* Frame 1 */}
+          <div className="w-full sm:w-auto max-w-sm border-2 border-gray-200 dark:border-gray-700 p-3 rounded-xl shadow-sm flex flex-col items-center">
+            <img
+              src="/EmenHuddle.jpeg"
+              alt="Ultimate Frisbee huddle"
+              className="w-full h-auto rounded-lg object-contain"
+            />
+            <p className="mt-4 text-center text-[var(--color-text)] leading-relaxed">
+              Me and the Emen huddling at an important tournament
+            </p>
+          </div>
+
+          {/* Frame 2 */}
+          <div className="w-full sm:w-auto max-w-sm border-2 border-gray-200 dark:border-gray-700 p-3 rounded-xl shadow-sm flex flex-col items-center">
+            <img
+              src="/PitPiano.jpeg"
+              alt="Playing piano in the pit"
+              className="w-full h-auto rounded-lg object-contain"
+            />
+            <p className="mt-4 text-center text-[var(--color-text)] leading-relaxed">
+              Me playing piano with the Pit in a High School Musical
+            </p>
+          </div>
+        </div>
       </PageContainer>
     </section>
   );
