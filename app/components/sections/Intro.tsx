@@ -13,9 +13,9 @@ export default function Intro() {
         </h1>
 
         <p className="mt-4 text-lg text-[var(--color-text)] leading-relaxed max-w-[75ch]">
-          I’m a computer science student at Tufts University and a software
-          developer interested in building thoughtful, reliable web
-          applications.
+          I'm a computer science student at Tufts University and a software
+          developer based out of Brooklyn NY. I taught myself web development
+          and I love helping people .....
         </p>
         <br />
         <p className="text-[var(--color-text)]">
@@ -32,7 +32,7 @@ export default function Intro() {
             {" | "}
           </Link>
           <Link href="/about" className="hover:text-[var(--color-accent)]">
-            More about me...
+            Learn more about me
           </Link>
         </p>
       </PageContainer>

@@ -25,12 +25,14 @@ export default function Experience() {
             description="A fullstack teaching website for a nonprofit built from scratch to manage courses and users."
             image="/DillarAcademy.png"
             tags={["React", "Javascript", "MongoDB", "NodeJS", "TailwindCSS"]}
+            href={"/experience/DillarAcademy"}
           />
           <ShowcaseCard
-            title="TuftsAdvisor"
-            description="An Outlook plugin and chatbot that streamlines academic advising using retrieval-augmented generation."
-            image="/TuftsAdvisor.png"
-            tags={["React", "Python", "Flask", "RAG", "MongoDB"]}
+            title="Satisfactory Factory Planner"
+            description="A fullstack WPF Desktop Application that parses game data to build crafting trees from user provided inputs."
+            image="/SatisfactoryPlannerLogo.png"
+            tags={["C#", ".Net", "WPF", "JsonSerialization"]}
+            href={"/experience/SatisfactoryPlanner"}
           />
         </div>
       </PageContainer>

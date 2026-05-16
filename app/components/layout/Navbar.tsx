@@ -37,7 +37,7 @@ export default function Navbar() {
             Experience
           </Link>
           <Link
-            href="mailto:sanderson28801@gmail.com"
+            href="/contact"
             className="hover:opacity-70 transition hover:text-[var(--color-accent)] transition duration-500 ease-in-out"
           >
             Contact

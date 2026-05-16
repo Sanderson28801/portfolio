@@ -7,7 +7,6 @@ export default function Portfolio() {
     <>
       <Intro />
       <Experience />
-      <Projects />
     </>
   );
 }

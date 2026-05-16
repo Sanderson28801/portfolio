@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type ShowcaseCardProps = {
   title: string;
   description: string;
   image: string;
   tags: string[];
-  accentColor?: string;
+  href: string;
 };
 
 export default function ShowcaseCard({
@@ -13,10 +14,12 @@ export default function ShowcaseCard({
   description,
   image,
   tags,
+  href,
 }: ShowcaseCardProps) {
   return (
-    <div
-      className="
+    <Link href={href} className="block w-full">
+      <div
+        className="
     group
     rounded-xl
     border
@@ -30,10 +33,10 @@ export default function ShowcaseCard({
     overflow-hidden
     justify-between
   "
-    >
-      {/* Image */}
-      <div
-        className="
+      >
+        {/* Image */}
+        <div
+          className="
     relative
     aspect-[16/9]
     bg-[var(--color-secondary-background)]
@@ -42,13 +45,13 @@ export default function ShowcaseCard({
     items-center
     justify-center
   "
-      >
-        <Image
-          src={image}
-          alt={title}
-          width={600}
-          height={400}
-          className="
+        >
+          <Image
+            src={image}
+            alt={title}
+            width={600}
+            height={400}
+            className="
       object-contain
       max-w-[85%]
       max-h-[85%]
@@ -57,23 +60,23 @@ export default function ShowcaseCard({
       ease-out
       group-hover:scale-105
     "
-        />
-      </div>
+          />
+        </div>
 
-      {/* Content */}
-      <div className="p-5">
-        <h3 className="font-medium text-[var(--color-header)]">{title}</h3>
+        {/* Content */}
+        <div className="p-5">
+          <h3 className="font-medium text-[var(--color-header)]">{title}</h3>
 
-        <p className="mt-2 text-sm text-[var(--color-text)] leading-relaxed">
-          {description}
-        </p>
+          <p className="mt-2 text-sm text-[var(--color-text)] leading-relaxed">
+            {description}
+          </p>
 
-        {/* Tags */}
-        <ul className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <li
-              key={tag}
-              className="
+          {/* Tags */}
+          <ul className="mt-4 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <li
+                key={tag}
+                className="
                 text-xs
                 font-medium
                 px-2.5 py-1
@@ -83,12 +86,13 @@ export default function ShowcaseCard({
                 border border-[var(--color-accent)]
                 
               "
-            >
-              {tag}
-            </li>
-          ))}
-        </ul>
+              >
+                {tag}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }

@@ -7,12 +7,13 @@
   --header-color: #4c4f69;
   --text-color: #6c6f85;
 
+  --footer-color: #dce0e8;
+
   --accent-color: #1e66f5;
   --tertiary-background: #eff1f5;
 
-  /* --icon-color-1: #286f6c;
-  --icon-color-2: #edbe48;
-  --icon-color-3: #f16440; */
+  --select-color: #3d7bf5;
+  --select-background: #b0c7f5;
 }
 
 @theme inline {
@@ -22,6 +23,7 @@
 
   --color-header: var(--header-color);
   --color-text: var(--text-color);
+  --color-footer: var(--footer-color);
 
   --color-accent: var(--accent-color);
 
@@ -44,7 +46,11 @@
     --secondary-background: #a9b4c0;
     --tertiary-background: #1e1e2e;
 
+    --select-color: #789cc8;
+    --select-background: #3d4a6b;
     --accent-color: #89b4fa;
+
+    --footer-color: #11111b;
   }
 }
 
@@ -52,4 +58,13 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+::selection {
+  color: var(--select-color);
+  background: var(--select-background);
 }
