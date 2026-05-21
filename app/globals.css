@@ -53,6 +53,9 @@
     --footer-color: #11111b;
   }
 }
+@utility normal-text {
+  @apply mt-4 text-[var(--color-text)] leading-relaxed;
+}
 
 body {
   background: var(--background);
@@ -68,3 +71,10 @@ html {
   color: var(--select-color);
   background: var(--select-background);
 }
+
+/* .normal-text {
+  margin-top: 4px;
+  color : var(--color-text);
+
+  mt-4 text-[var(--color-text)] leading-relaxed
+} */

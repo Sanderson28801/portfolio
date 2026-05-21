@@ -14,8 +14,9 @@ export default function Intro() {
 
         <p className="mt-4 text-lg text-[var(--color-text)] leading-relaxed max-w-[75ch]">
           I'm a computer science student at Tufts University and a software
-          developer based out of Brooklyn NY. I taught myself web development
-          and I love helping people .....
+          developer based out of Brooklyn NY. I am currently teaching myself C#
+          and enterprise software development, and I'm always looking for new
+          opportunities to learn and grow as a developer.
         </p>
         <br />
         <p className="text-[var(--color-text)]">

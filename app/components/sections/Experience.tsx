@@ -30,7 +30,7 @@ export default function Experience() {
           <ShowcaseCard
             title="Satisfactory Factory Planner"
             description="A fullstack WPF Desktop Application that parses game data to build crafting trees from user provided inputs."
-            image="/SatisfactoryPlannerLogo.png"
+            image="/SatisfactoryPlannerLogo.jpg"
             tags={["C#", ".Net", "WPF", "JsonSerialization"]}
             href={"/experience/SatisfactoryPlanner"}
           />
