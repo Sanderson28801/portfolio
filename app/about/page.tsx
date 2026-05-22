@@ -32,8 +32,8 @@ export default function About() {
           I am structuring a relational database, writing REST APIs, or
           exploring new C# features, I am driven by the challenge of designing
           clean, logical systems. My overarching goal is to build software that
-          acts as a force for good—tools that are efficient, privacy-respecting,
-          and highly practical.
+          acts as a force for good, tools that are efficient,
+          privacy-respecting, and highly practical.
         </p>
 
         <p className="normal-text">
