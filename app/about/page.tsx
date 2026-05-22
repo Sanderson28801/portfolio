@@ -54,6 +54,7 @@ export default function About() {
           data queries and preparing to architect more complex, data-driven
           backend pipelines in my upcoming projects.
         </p>
+        <br></br>
         <h2 className="text-3xl md:text-3xl font-semibold text-[var(--color-header)]">
           Hobbies
         </h2>
