@@ -1,4 +1,6 @@
 import PageContainer from "@/components/layout/PageContainer";
+import { FiMail, FiGithub } from "react-icons/fi";
+import { AiOutlineLinkedin } from "react-icons/ai";
 
 export default function Contact() {
   return (
@@ -8,62 +10,45 @@ export default function Contact() {
           Contact
         </h1>
 
-        <p className="mt-4 text-[var(--color-text)] leading-relaxed">
-          I'm currently looking for software engineering internships and new
-          opportunities. Whether you have a question, a project idea, or just
-          want to connect, feel free to reach out to me through any of the
-          channels below!
+        <p className="mt-4 text-[var(--color-text)] leading-relaxed max-w-[75ch]">
+          I am actively seeking backend, data engineering, and general software
+          engineering internships for <strong>Summer 2027</strong>. Whether you
+          have an open role, a project idea, or just want to connect, my inbox
+          is always open.
         </p>
-
         <br />
 
-        <h2 className="text-2xl md:text-3xl font-semibold text-[var(--color-header)]">
-          Let's Connect
-        </h2>
-
-        <div className="mt-4 flex flex-col space-y-4 text-[var(--color-text)] leading-relaxed">
+        <div className="mt-6 flex flex-col space-y-6 text-[var(--color-text)] text-lg">
           {/* Email */}
-          <p>
-            <span className="font-semibold text-[var(--color-header)]">
-              Email:{" "}
-            </span>
-            <a
-              href="mailto:spencer.anderson@tufts.edu"
-              className="hover:underline hover:opacity-80 transition-opacity"
-            >
-              spencer.anderson@tufts.edu
-            </a>
-          </p>
+          <a
+            href="mailto:sanderson28801@gmail.com"
+            className="flex items-center gap-3 hover:text-[var(--color-accent)] transition-colors w-fit"
+          >
+            <FiMail className="w-6 h-6" />
+            <span>sanderson28801@gmail.com</span>
+          </a>
 
           {/* LinkedIn */}
-          <p>
-            <span className="font-semibold text-[var(--color-header)]">
-              LinkedIn:{" "}
-            </span>
-            <a
-              href="https://www.linkedin.com/in/spencer-anderson-14s/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline hover:opacity-80 transition-opacity"
-            >
-              spencer-anderson14
-            </a>
-          </p>
+          <a
+            href="https://www.linkedin.com/in/spencer-anderson-14s/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 hover:text-[var(--color-accent)] transition-colors w-fit"
+          >
+            <AiOutlineLinkedin className="w-6 h-6" />
+            <span>spencer-anderson-14s</span>
+          </a>
 
           {/* GitHub */}
-          <p>
-            <span className="font-semibold text-[var(--color-header)]">
-              GitHub:{" "}
-            </span>
-            <a
-              href="https://github.com/Sanderson28801"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline hover:opacity-80 transition-opacity"
-            >
-              github.com/Sanderson28801
-            </a>
-          </p>
+          <a
+            href="https://github.com/Sanderson28801"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 hover:text-[var(--color-accent)] transition-colors w-fit"
+          >
+            <FiGithub className="w-6 h-6" />
+            <span>Sanderson28801</span>
+          </a>
         </div>
       </PageContainer>
     </section>

@@ -22,16 +22,16 @@ export default function Experience() {
         <div className="sm:flex sm:gap-2">
           <ShowcaseCard
             title="DillarAcademy"
-            description="A fullstack teaching website for a nonprofit built from scratch to manage courses and users."
+            description="Engineered the Node.js and MongoDB backend for a non-profit platform, enabling secure user management and dynamic course enrollment."
             image="/DillarAcademy.png"
-            tags={["React", "Javascript", "MongoDB", "NodeJS", "TailwindCSS"]}
+            tags={["Node.js", "MongoDB", "React", "JavaScript", "TailwindCSS"]} // Backend tech first!
             href={"/experience/DillarAcademy"}
           />
           <ShowcaseCard
             title="Satisfactory Factory Planner"
-            description="A fullstack WPF Desktop Application that parses game data to build crafting trees from user provided inputs."
+            description="Developed a C#/.NET engine that parses complex JSON game data to calculate multi-stage resource logistics and production efficiencies."
             image="/SatisfactoryPlannerLogo.jpg"
-            tags={["C#", ".Net", "WPF", "JsonSerialization"]}
+            tags={["C#", ".NET", "ASP.NET Core", "JSON Serialization", "React"]} // Prioritized the logic
             href={"/experience/SatisfactoryPlanner"}
           />
         </div>

@@ -61,33 +61,57 @@ export default function DillarAcademy() {
             Github link to project
           </a>
         </div>
+        <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--color-text)] border-b border-black/10 dark:border-white/10 pb-4 mb-6">
+          <p>
+            <strong className="text-[var(--color-header)] font-semibold">
+              Role:
+            </strong>{" "}
+            Backend Developer
+          </p>
+          <p>
+            <strong className="text-[var(--color-header)] font-semibold">
+              Team Size:
+            </strong>{" "}
+            10
+          </p>
+          <p>
+            <strong className="text-[var(--color-header)] font-semibold">
+              Timeline:
+            </strong>{" "}
+            8 Months
+          </p>
+          <p>
+            <strong className="text-[var(--color-header)] font-semibold">
+              Tech:
+            </strong>{" "}
+            Node.js, MongoDB
+          </p>
+        </div>
         <p className="normal-text">
-          Dillar Academy is a nonprofit organization that provides a free
-          English education to Uyghurs around the world. When we started
-          creating the website for them, they had just a wix site which was
-          incredibly laggy, and users joined classes by just joining a google
-          meet link. They had no logins, no admins, and no users. This means
-          that they had no way to track if a student was signed up for a class
-          and no way to manage students at all.
+          Dillar Academy is a nonprofit organization providing free English
+          education to Uyghur students globally. Their legacy system—a basic Wix
+          site paired with public Google Meet links lacked authentication, user
+          roles, and database management. Administrators had no systematic way
+          to track enrollment, and students experienced high friction just
+          trying to join a class.
         </p>
 
         <p className="normal-text">
-          There was so much friction in using the system they had that they
-          needed an upgrade. We designed and built a brand new custom website
-          for them from scratch that included user authentication, an admin
-          dashboard, and a course management system. This allowed them to focus
-          on teaching English rather than getting bogged down in manual student
-          management and configuring a buggy wix site.
+          To resolve this, our team engineered a custom, full-stack application
+          from the ground up. I contributed heavily to the backend architecture
+          using Node.js and MongoDB, implementing secure user authentication,
+          role-based access control (admins vs. students), and a relational
+          course management system. This allowed the organization to automate
+          student tracking and focus entirely on education.
         </p>
 
         <p className="normal-text">
-          Over the course of 2 semesters, a team of 10 developers, a project
-          manager, and a tech lead completed weekly sprints and slowly built
-          this website from the ground up. We built a custom backend using
-          NodeJS and MongoDB, and a custom frontend using React and TailwindCSS.
-          While building the app, we kept in touch with the founder of Dillar
-          Academy to make sure we were building the features they needed and
-          that the design was something they liked.
+          Over the course of two semesters, I collaborated closely within a
+          10-person agile development team. Working alongside a project manager
+          and tech lead, we executed weekly sprints and maintained continuous
+          communication with the nonprofit's founder to ensure our database
+          architecture and feature set precisely matched their operational
+          needs.
         </p>
 
         <ImageGallery images={dillarImages} />

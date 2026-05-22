@@ -9,35 +9,33 @@ export default function Experience() {
           Experience and Projects
         </h1>
 
-        <p className="mt-4 text-[var(--color-text)] leading-relaxed">
-          I love to collaborate with my peers on projects and also build solo
-          projects that I'm passionate about
+        <p className="mt-4 text-[var(--color-text)] leading-relaxed max-w-[75ch]">
+          Here are a few of the systems I've built. My work ranges from
+          developing full-scale educational platforms in agile team environments
+          to architecting solo data engines and RAG pipelines.
         </p>
-
-        <p className="mt-4 text-[var(--color-text)] leading-relaxed">
-          Tap on any of the cards below to learn more about the project
-        </p>
+        <br />
 
         <div className="sm:flex sm:gap-2">
           <ShowcaseCard
             title="DillarAcademy"
-            description="A fullstack teaching website for a nonprofit built from scratch to manage courses and users."
+            description="Engineered the Node.js and MongoDB backend for a non-profit platform, enabling secure user management and dynamic course enrollment."
             image="/DillarAcademy.png"
-            tags={["React", "Javascript", "MongoDB", "NodeJS", "TailwindCSS"]}
+            tags={["Node.js", "MongoDB", "React", "JavaScript", "TailwindCSS"]} // Backend tech first!
             href={"/experience/DillarAcademy"}
           />
           <ShowcaseCard
             title="Satisfactory Factory Planner"
-            description="A fullstack WPF Desktop Application that parses game data to build crafting trees from user provided inputs."
+            description="Developed a C#/.NET engine that parses complex JSON game data to calculate multi-stage resource logistics and production efficiencies."
             image="/SatisfactoryPlannerLogo.jpg"
-            tags={["C#", ".Net", "WPF", "JsonSerialization"]}
+            tags={["C#", ".NET", "ASP.NET Core", "JSON Serialization", "React"]} // Prioritized the logic
             href={"/experience/SatisfactoryPlanner"}
           />
           <ShowcaseCard
             title="TuftsAdvisor"
             description="An Outlook plugin and chatbot that streamlines academic advising using retrieval-augmented generation."
             image="/TuftsAdvisor.png"
-            tags={["React", "Python", "Flask", "RAG", "MongoDB"]}
+            tags={["Python", "Flask", "MongoDB", "RAG", "React"]} // React moved to the end!
             href={"/experience/TuftsAdvisor"}
           />
         </div>

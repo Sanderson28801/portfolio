@@ -8,30 +8,49 @@ export default function Intro() {
     <section className="pt-16 pb-24">
       <PageContainer>
         <h1 className="text-3xl md:text-4xl font-semibold text-[var(--color-header)]">
-          Hello! I’m{" "}
+          Hello! I'm{" "}
           <span className="text-[var(--color-accent)]">Spencer Anderson</span>
         </h1>
 
         <p className="mt-4 text-lg text-[var(--color-text)] leading-relaxed max-w-[75ch]">
-          I'm a computer science student at Tufts University and a software
-          developer based out of Brooklyn NY. I am currently teaching myself C#
-          and enterprise software development, and I'm always looking for new
-          opportunities to learn and grow as a developer.
+          I'm a Computer Science student at Tufts University and a software
+          developer based in Brooklyn, NY. I focus on backend architecture and
+          system logic and enjoy designing the data structures and APIs that keep
+          applications running efficiently. Currently, I am expanding my
+          knowledge of C# and enterprise development to build software that is
+          robust, scalable, and genuinely useful.
         </p>
         <br />
         <p className="text-[var(--color-text)]">
-          <Link href={"https://github.com/Sanderson28801"}>
+          <Link
+            href={"https://github.com/Sanderson28801"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className=" hover:text-[var(--color-accent)]">
               <FiGithub className="align-middle inline" /> GitHub
             </span>
             {" | "}
           </Link>
-          <Link href={"https://www.linkedin.com/in/spencer-anderson-14s/"}>
+          <Link
+            href={"https://www.linkedin.com/in/spencer-anderson-14s/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="hover:text-[var(--color-accent)]">
               <AiOutlineLinkedin className="align-middle inline" /> LinkedIn
             </span>
             {" | "}
           </Link>
+          <Link
+            href="/Spencer_Anderson_Software_Dev.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[var(--color-accent)] transition duration-500 ease-in-out"
+          >
+            Resume
+          </Link>
+          {" | "}
           <Link href="/about" className="hover:text-[var(--color-accent)]">
             Learn more about me
           </Link>

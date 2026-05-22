@@ -8,13 +8,13 @@ export default function SatisfactoryPlanner() {
       src: "/SatisfactoryPlannerHomepage.png",
       alt: "Satisfactory Planner Homepage",
       caption:
-        "Satisfactory Factory Planner Homepage where users can input the items they want to produce and the desired production rate",
+        "The React client interface, which queries the ASP.NET backend for available items and base production parameters.",
     },
     {
       src: "/SatisfactoryPlannerRecipePage.png",
       alt: "Satisfactory Planner Recipe Page",
       caption:
-        "Satisfactory Factory Planner Recipe Page which shows the crafting tree for a given item and production rate",
+        "Visualized output of the C# graph traversal algorithm, detailing the calculated logistical dependencies and power requirements.",
     },
   ];
   return (
@@ -59,32 +59,55 @@ export default function SatisfactoryPlanner() {
             Github link to project
           </a>
         </div>
+        <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--color-text)] border-b border-black/10 dark:border-white/10 pb-4 mb-6">
+          <p>
+            <strong className="text-[var(--color-header)] font-semibold">
+              Role:
+            </strong>{" "}
+            Solo Developer
+          </p>
+          <p>
+            <strong className="text-[var(--color-header)] font-semibold">
+              Type:
+            </strong>{" "}
+            Personal Engine Project
+          </p>
+          <p>
+            <strong className="text-[var(--color-header)] font-semibold">
+              Timeline:
+            </strong>{" "}
+            Spring 2026
+          </p>
+          <p>
+            <strong className="text-[var(--color-header)] font-semibold">
+              Tech:
+            </strong>{" "}
+            C#, ASP.NET Core, JSON
+          </p>
+        </div>
 
         <p className="normal-text">
-          Satisfactory is a factory building game where players build and
-          optimize complex production lines to manufacture a wide variety of
-          products. Later in the game, crafting trees and productions lines
-          become much more complex and it is difficult to figure out the optimal
-          way to set up your factory.
+          In the automation game Satisfactory, end-game manufacturing requires
+          balancing massively complex, multi-stage production lines. Calculating
+          the optimal input ratios, power requirements, and logistical routing
+          by hand quickly becomes a bottleneck.
         </p>
 
         <p className="normal-text">
-          To address this issue, the Satisfactory Factory Planner app I built
-          allows players to input the items they want to produce and the desired
-          production rate, and then generates an optimized crafting tree for
-          that detailing all the machines and power they will need.
+          To solve this, I built a custom logistics calculator that acts as a
+          production engine. The user inputs a target item and yield, and the
+          application generates a mathematically optimized crafting tree
+          detailing every machine, raw resource, and dependency required to
+          maintain 100% efficiency.
         </p>
 
         <p className="normal-text">
-          I'm becoming interested in C# and enterprise software development, so
-          I built this app using React, Typescript, and Tailwind CSS for the
-          frontend and ASP.Net for the backend. The app parses game data from
-          JSON files to get information about all the items, recipes, and
-          machines in the game, and then uses that data to build the crafting
-          trees using graph traversal algorithms. The app also has a sleek and
-          intuitive UI that allows users to easily input their desired items and
-          production rates, and then visualize the resulting crafting tree in an
-          interactive way.
+          I built the backend engine in C# using ASP.NET Core, utilizing robust
+          JSON serialization to dynamically parse raw game data files containing
+          hundreds of nested recipes and items. The core logic relies on
+          directed graph traversal algorithms to calculate the production
+          chains, which are then served to a React and TypeScript frontend via a
+          REST API.
         </p>
         <ImageGallery images={satisfactoryImages} />
       </PageContainer>

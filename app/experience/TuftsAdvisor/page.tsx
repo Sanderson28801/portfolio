@@ -52,31 +52,55 @@ export default function TuftsAdvisor() {
             Devpost submission
           </a>
         </div>
-
+        <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--color-text)] border-b border-black/10 dark:border-white/10 pb-4 mb-6">
+          <p>
+            <strong className="text-[var(--color-header)] font-semibold">
+              Role:
+            </strong>{" "}
+            Backend & API Integration
+          </p>
+          <p>
+            <strong className="text-[var(--color-header)] font-semibold">
+              Team Size:
+            </strong>{" "}
+            6
+          </p>
+          <p>
+            <strong className="text-[var(--color-header)] font-semibold">
+              Timeline:
+            </strong>{" "}
+            48 Hours
+          </p>
+          <p>
+            <strong className="text-[var(--color-header)] font-semibold">
+              Tech:
+            </strong>{" "}
+            Python, Flask, Graph API
+          </p>
+        </div>
         <p className="normal-text">
-          JumboHack is the hackathon for Tufts University. It takes place over
-          one weekend giving developers just 48 hours to build a project from
-          scratch. I participated in JumboHack 2024 with a team of 5 other
-          students and we built TuftsAdvisor, an Outlook plugin and chatbot that
-          streamlines academic advising using retrieval-augmented generation.
+          During Tufts University's JumboHack, our team of six noticed a major
+          inefficiency in academic advising: advisors spend countless hours
+          answering the same routine policy questions. We had 48 hours to build
+          a solution from scratch, resulting in TuftsAdvisor, a
+          Retrieval-Augmented Generation (RAG) tool that automates these
+          workflows.
         </p>
         <p className="normal-text">
-          We then linked out model to outlook, allowing advisors to "auto-reply"
-          to students inquires about school policy. These auto generated
-          messages would be left in the advisors drafts folder and not sent to
-          students automatically so they could be edited and personalized before
-          being sent out. This helps address the issue that advisors often must
-          answer the same questions over and over, but there is no way to
-          automate these mundane rote messages except now through TuftsAdvisor.
+          I architected the backend using Python and Flask, integrating a RAG
+          pipeline to pull accurate institutional policies. We then connected
+          the system directly to an advisor's inbox using the Microsoft Graph
+          API. Instead of sending emails automatically, the model reads incoming
+          student inquiries and generates highly contextual draft responses
+          directly into the advisor's Outlook Drafts folder.
         </p>
         <p className="normal-text">
-          We built the app using Python and Flask for a simple chatbot app. Then
-          we used Microsoft Graph API to connect our model to outlook and allow
-          it to read and write draft messages. We were the winners of the Down
-          the Rabbit Hole track, which required that most of the members be
-          freshmen.
+          This "human-in-the-loop" approach eliminates the friction of writing
+          simple emails while allowing the advisor to quickly review and
+          personalize the message before sending. Our fully functional prototype
+          won the 'Down the Rabbit Hole' track, demonstrating how effectively
+          backend data pipelines can optimize administrative bottlenecks.
         </p>
-
         <div className="flex justify-center mt-6">
           {/* Video Frame */}
           <div className="w-full sm:w-auto max-w-lg border-2 border-gray-200 dark:border-gray-700 p-3 rounded-xl shadow-sm flex flex-col items-center">
@@ -94,7 +118,8 @@ export default function TuftsAdvisor() {
 
             {/* Caption */}
             <p className="mt-4 mx-15 text-center text-[var(--color-text)] leading-relaxed">
-              A demonstration of TuftsAdvisor working with Outlook
+              A demonstration of the RAG pipeline utilizing the Microsoft Graph
+              API to securely draft Outlook responses.
             </p>
           </div>
         </div>
